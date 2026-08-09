@@ -43,22 +43,9 @@ forensic checks to help flag whether it may have been edited or manipulated
 
 ---
 
-## ⚠️ Important limitations — read before relying on this for real investigations
+## Note
 
-This tool uses classic image forensics heuristics. It's a useful
-**screening aid**, not definitive proof of tampering:
-
-- **It does not detect AI-generated images directly.** Distinguishing a
-  genuinely AI-generated image from a real photo is a different problem
-  from detecting edits to a real photo, and reliably requires a trained
-  neural network classifier — outside the scope of this version.
-- **Face count alone is not evidence of tampering** — a photo can
-  legitimately contain zero, one, or many real faces.
-- **Low noise, high edge density, or ELA hotspots can have innocent
-  explanations** (JPEG re-compression, camera settings, lighting, resizing)
-  — treat flagged results as leads to investigate further, not conclusions.
-- Results should be **corroborated with other evidence** in any real
-  investigative context, not used as a standalone determination.
+This tool uses classic image forensics heuristics (edge, noise, ELA, face detection) as an investigative screening aid — results are leads to investigate further, not standalone proof of tampering.
 
 ---
 
